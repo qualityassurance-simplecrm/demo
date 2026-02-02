@@ -16,8 +16,16 @@ test('get starrted link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
-test('get startedsda link', async ({ page }) => {
+test('test 2', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link
+});
+
+test('test 4', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+
+  // Click the get started link
+    await expect(page.getByRole('heading', { name: 'Installationn' })).toBeVisible();
+
 });
